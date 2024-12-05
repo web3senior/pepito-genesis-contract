@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "remix:localhost": "remixd -s ./ -u https://remix.ethereum.org"
+  },
+  "dependencies": {
+    "@lukso/lsp-smart-contracts": "^0.15.0",
+    "@remix-project/remixd": "^0.6.40"
+  }
+}

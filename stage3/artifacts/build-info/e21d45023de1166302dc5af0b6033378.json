@@ -1,0 +1,250 @@
+{
+	"id": "e21d45023de1166302dc5af0b6033378",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"stage3/_error.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.24;\r\n\r\nerror Unauthorized();\r\nerror PriceNotMet(string , uint256 amount);\r\nerror NotUniqueAddress(address sender);\r\nerror totalSupplyExceeded(string);"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": true,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"stage3/_error.sol": {
+				"ast": {
+					"absolutePath": "stage3/_error.sol",
+					"exportedSymbols": {
+						"NotUniqueAddress": [
+							13
+						],
+						"PriceNotMet": [
+							9
+						],
+						"Unauthorized": [
+							3
+						],
+						"totalSupplyExceeded": [
+							17
+						]
+					},
+					"id": 18,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".24"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:24:0"
+						},
+						{
+							"errorSelector": "82b42900",
+							"id": 3,
+							"name": "Unauthorized",
+							"nameLocation": "67:12:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 2,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "79:2:0"
+							},
+							"src": "61:21:0"
+						},
+						{
+							"errorSelector": "eebe24b9",
+							"id": 9,
+							"name": "PriceNotMet",
+							"nameLocation": "90:11:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 8,
+								"nodeType": "ParameterList",
+								"parameters": [
+									{
+										"constant": false,
+										"id": 5,
+										"mutability": "mutable",
+										"name": "",
+										"nameLocation": "-1:-1:-1",
+										"nodeType": "VariableDeclaration",
+										"scope": 9,
+										"src": "102:6:0",
+										"stateVariable": false,
+										"storageLocation": "default",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_memory_ptr",
+											"typeString": "string"
+										},
+										"typeName": {
+											"id": 4,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "102:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										},
+										"visibility": "internal"
+									},
+									{
+										"constant": false,
+										"id": 7,
+										"mutability": "mutable",
+										"name": "amount",
+										"nameLocation": "119:6:0",
+										"nodeType": "VariableDeclaration",
+										"scope": 9,
+										"src": "111:14:0",
+										"stateVariable": false,
+										"storageLocation": "default",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										},
+										"typeName": {
+											"id": 6,
+											"name": "uint256",
+											"nodeType": "ElementaryTypeName",
+											"src": "111:7:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											}
+										},
+										"visibility": "internal"
+									}
+								],
+								"src": "101:25:0"
+							},
+							"src": "84:43:0"
+						},
+						{
+							"errorSelector": "4816f3b9",
+							"id": 13,
+							"name": "NotUniqueAddress",
+							"nameLocation": "135:16:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 12,
+								"nodeType": "ParameterList",
+								"parameters": [
+									{
+										"constant": false,
+										"id": 11,
+										"mutability": "mutable",
+										"name": "sender",
+										"nameLocation": "160:6:0",
+										"nodeType": "VariableDeclaration",
+										"scope": 13,
+										"src": "152:14:0",
+										"stateVariable": false,
+										"storageLocation": "default",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										},
+										"typeName": {
+											"id": 10,
+											"name": "address",
+											"nodeType": "ElementaryTypeName",
+											"src": "152:7:0",
+											"stateMutability": "nonpayable",
+											"typeDescriptions": {
+												"typeIdentifier": "t_address",
+												"typeString": "address"
+											}
+										},
+										"visibility": "internal"
+									}
+								],
+								"src": "151:16:0"
+							},
+							"src": "129:39:0"
+						},
+						{
+							"errorSelector": "5766e669",
+							"id": 17,
+							"name": "totalSupplyExceeded",
+							"nameLocation": "176:19:0",
+							"nodeType": "ErrorDefinition",
+							"parameters": {
+								"id": 16,
+								"nodeType": "ParameterList",
+								"parameters": [
+									{
+										"constant": false,
+										"id": 15,
+										"mutability": "mutable",
+										"name": "",
+										"nameLocation": "-1:-1:-1",
+										"nodeType": "VariableDeclaration",
+										"scope": 17,
+										"src": "196:6:0",
+										"stateVariable": false,
+										"storageLocation": "default",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_memory_ptr",
+											"typeString": "string"
+										},
+										"typeName": {
+											"id": 14,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "196:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										},
+										"visibility": "internal"
+									}
+								],
+								"src": "195:8:0"
+							},
+							"src": "170:34:0"
+						}
+					],
+					"src": "33:171:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 {
   "semi": false,
   "singleQuote": true,
-  "printWidth": 900,
+  "printWidth": 4800,
   "overrides": [
     {
       "files": "*.test.js",
