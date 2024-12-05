@@ -1931,6 +1931,9 @@
 				"ShopEvolve(bytes32,bytes32,string)": {
 					"notice": "Metamorphosis Evolve"
 				},
+				"addShop(string,string,uint256,uint8,string)": {
+					"notice": "Add shop"
+				},
 				"batchCalls(bytes[])": {
 					"notice": "Executing the following batch of abi-encoded function calls on the contract: `data`."
 				},
@@ -1951,6 +1954,12 @@
 				},
 				"getDataForTokenId(bytes32,bytes32)": {
 					"notice": "Retrieves data for a specific `tokenId` and `dataKey`."
+				},
+				"getMetadata(string)": {
+					"notice": "Generate verifiable metdata for LSP8 standard"
+				},
+				"getShopList()": {
+					"notice": "Get shop items"
 				},
 				"pause()": {
 					"notice": "Pause mint"
@@ -1974,7 +1983,10 @@
 					"notice": "Unpause mint"
 				},
 				"updateShop(bytes32,string,string,uint256,uint8,string)": {
-					"notice": "Update record type"
+					"notice": "Update shop"
+				},
+				"updateWallet(string,address)": {
+					"notice": "Update wallet"
 				},
 				"withdraw()": {
 					"notice": "Withdraw the balance from this contract to the owner's address"
@@ -2273,19 +2285,19 @@
 			]
 		},
 		"stage3/Anuran.sol": {
-			"keccak256": "0x4de9277a2f38d60a1ccf829788707a1b97756e05f66c617acec7d542ec6d5eae",
+			"keccak256": "0x18fa6f5661b1525693383cd1b3d89f78314e741377c15e0681a46e838dc83bfe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0582bfa948da4cc37b807676af0d70b4b313b851594db87dddb6faab3f5f8ac0",
-				"dweb:/ipfs/QmTeoyC6dPfUEWAFpHe1YAQYEby91mATYRqfhHpk34tQ3Q"
+				"bzz-raw://1420f30a1bfc2b8f0e203ddaac56a1c4d1f6db4369f6279edfe95cc45e752649",
+				"dweb:/ipfs/QmVBedCV4p38jP6GJn8vGcWcaByRLG6a9JKzCCQ3iJnJU7"
 			]
 		},
 		"stage3/_constant.sol": {
-			"keccak256": "0x70ac54a36200595d5f553ce835ade44e14c3a664c20b3eddecd35f1af9e95333",
+			"keccak256": "0x7a7cb0fdaaf964382ff45cce5af01db8accaa8a0f08de9b3f1df48ba47e0e95d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ac1bdcc6878624c1144fc40ab00f83a5f90a87a2b7cae44b4ff18880bda8cf68",
-				"dweb:/ipfs/Qmd854jd4G7JvBKuQPXD8j46ThRQUXKenaip6fMSpUvDEf"
+				"bzz-raw://2ffbd09d2a88f6a9c19be4b41ce720aec6c5125881215b72c035c45b120c07e4",
+				"dweb:/ipfs/QmdeZZEmehNkqnsQCPSJjKRosgZeQ6pXXh3f9YgbCEbqW9"
 			]
 		},
 		"stage3/_error.sol": {
